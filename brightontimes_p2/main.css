@@ -114,49 +114,6 @@ ul {
   color: #212121;
 }
 
-/*
- Hamburger menu - followed instructions on W3C https://www.w3schools.com/howto/howto_css_menu_icon.asp 
-*/
-
-/* Creating a small menu that, through media queries, will only show when the viewport is less than 526px */
-/* the name of this menu will be used in the javascript function to toggle */
-.small_menu {
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* these are the individual bars to make our "hamburger" looking menu */
-.bar1, .bar2, .bar3 {
-  /* the width, height, margin all impact the "X" effect on transition */
-  width: 32px;
-  height: 3px;
-  background-color: black;
-  margin: 6px 0;
-  transition: 0.05s;
-}
-
-.open .bar1 {
-  /* bar1 will rotate to create the upper-right to bottom-left of the X */
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-  /* bar2 disappears - there are only 2 bars needed to make the X */
-.open .bar2 {
-  opacity: 0;
-}
-  /* bar3 will rotate to create the bottom-right to upper-left of the X */
-.open .bar3 {
-  transform: rotate(45deg) translate(-5px, -5px);
-}
-
-.small_menu.open {
-  border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 300px;
-  height: 200px;
-  position: absolute;
-  z-index: 1;
-}
-
 /* 
 *
 *
@@ -164,27 +121,6 @@ MEDIA QUERIES
 *
 * 
 */
-
-@media screen and (max-width: 525px) {
-  .nav {
-    display: none;
-  }
-  
-  .header__title {
-    font-size: 2em;
-  }
-
-  .header__logo {
-    height: 45px;
-    margin: .5em;
-  }
-}
-
-@media screen and (min-width: 526px) {
-  .small_menu {
-    display: none;
-  }
-}
 
 
 /*
