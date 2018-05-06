@@ -1,4 +1,5 @@
-body, html {
+body, 
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -11,11 +12,20 @@ body {
   color: #424242;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0; 
 }
 
-header, nav, footer, section, article, div {
+header,
+nav, 
+footer, 
+section, 
+article, 
+div {
   box-sizing: border-box;
 }
 
@@ -95,8 +105,6 @@ ul {
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
-  min-width: 48px;
-  min-height: 48px;
   width: 24%;
   text-align: center;
   line-height: 24px;
@@ -107,20 +115,13 @@ ul {
 .nav a {
   text-decoration: none;
   color: #616161;
+  padding: 1.5em;
 }
 
 .nav a:hover {
   text-decoration: underline;
   color: #212121;
 }
-
-/* 
-*
-*
-MEDIA QUERIES
-*
-* 
-*/
 
 
 /*
@@ -142,6 +143,11 @@ main {
  *
  */
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 /*
  *
@@ -150,7 +156,6 @@ main {
  */
 
 .hero {
-  float: left;
   width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
@@ -178,11 +183,10 @@ main {
  */
 
 .top-news {
-  float: right;
-  width: 100%;
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+  width: 100%;
 }
 
 .news__title {
@@ -224,8 +228,6 @@ main {
  */
 
 .scores {
-  width: 100%;
-  float: left;
   padding-top: 1em;
 }
 
@@ -273,8 +275,6 @@ main {
  */
 
 .weather {
-  float: right;
-  width: 100%;
   padding: 1em;
 }
 
@@ -324,7 +324,7 @@ main {
 
 /*
  *
- * Weather
+ * Recent News
  *
  */
 
@@ -339,7 +339,7 @@ main {
 }
 
 .snippet__thumbnail {
-  width: 100%;
+  width: 100px;
   float: left;
   margin-right: 1em;
 }
@@ -379,4 +379,52 @@ footer li {
 footer a {
   text-decoration: none;
   color: #333;
+  padding: 1.5em;
+}
+
+/* 
+MEDIA QUERIES
+ */
+
+ @media screen and (max-width: 524px) {
+  .header__title {
+    font-size: 8vw;
+  }
+  .header__logo {
+    margin: auto;
+  }
+  footer {
+    font-size: 3vw;
+  }
+  .scores {
+    width: 100%;
+  }
+  .weather {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .scores {
+    width: 50%;
+  }
+  .weather {
+    width: 50%;
+  }
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    width: 50%;
+  }
 }
