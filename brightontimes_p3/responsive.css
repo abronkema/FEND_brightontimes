@@ -52,6 +52,25 @@
     width: 32px;
     fill: #E0E0E0;
   }
+  .scores__location {
+    display: none;
+  }
+  .date {
+    display: none;
+  }
+  .scores {
+    text-align: center;
+  }
+ .scores__table td:nth-child(3) {
+    text-align: center;
+}
+p {
+  display: none;
+}
+.snippet__title a {
+  padding: 1.5em;
+  display: inline-block;
+}
 }
 
 @media screen and (min-width: 550px) {
