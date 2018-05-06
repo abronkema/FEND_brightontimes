@@ -84,6 +84,15 @@ p {
   }
 }
 
+  @media screen and (min-width: 550px) and (max-width: 700px) {  
+  .snippet p {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .hero {
     width: 50%;
@@ -99,6 +108,7 @@ p {
   .weather {
     order: 3;
   }
+
 }
 
 @media screen and (min-width: 850px) {
