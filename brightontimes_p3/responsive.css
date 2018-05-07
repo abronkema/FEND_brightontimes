@@ -64,7 +64,7 @@
  .scores__table td:nth-child(3) {
     text-align: center;
 }
-p {
+.news p {
   display: none;
 }
 .snippet__title a {

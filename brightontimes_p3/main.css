@@ -25,6 +25,10 @@ ul {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 /*
  *
@@ -143,7 +147,7 @@ main {
 .hero {
   width: 100%;
   position: relative;
-  background-image: url("./images/dog.jpg");
+  background-image: url("https://res.cloudinary.com/dwa9ozdsb/image/upload/v1525650896/GWG_FEND/Brighton%20Times%20-%20FInal%20Part/annie-bolin-618300-unsplash.jpg");
   background-size: cover;
   height: 300px;
 }
